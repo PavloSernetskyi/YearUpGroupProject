@@ -96,27 +96,7 @@ onload = async () => {
 
   ctrlFreaks.innerHTML = freaksHTML;
 
-
-  // let userList = document.getElementById('userlist');
-
-  // let displayAllUsers = "";
-
-  // users.forEach(user => {
-  //   displayAllUsers += `
-  //   <div class="tm-black-bg tm-special-item">
-  //   <div style="display: flex; justify-content: center;">
-  //   <img src="${user.imageURL}" alt="Image" style="height: 200px; width: 200px;">
-  //   </div>
-  //   <div class="tm-special-item-description">
-  //     <h3 class="tm-text-primary tm-list-item-name">${user.Name}<a href="${user.GitHubProfile}" target="_blank" class="tm-list-item-price">github</a></h3>
-  //       <p class="tm-list-item-description"><strong>Email:</strong> ${user.Email}</p>
-  //       <p class="tm-list-item-description"><strong>NickName:</strong> ${user.CodingNickname}</p>
-  //   </div>
-  //   </div>
-  //   `
-  // })
-  // userList.innerHTML = displayAllUsers;
-
+  // food
   if (!localStorage.productId) {
     localStorage.productId = 8002270014901;
   }
@@ -133,7 +113,6 @@ onload = async () => {
   });
 }
 
-// from food
 const baseURL = 'https://world.openfoodfacts.org/api/v2/';
 
 async function fetchData(endpointResource) {
